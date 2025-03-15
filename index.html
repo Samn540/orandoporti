@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Envía tu petición de oración y estaremos orando por ti y tu familia.">
+    <title>Orando por ti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="parent">
+        <!-- Encabezado -->
+        <div class="div1">
+            <h1>Orando por ti</h1>
+        </div>
+        <!-- Mensaje principal -->
+        <div class="div2">
+            <h2>Cree en el Señor Jesús y serás salvo, tú y tu familia</h2>
+        </div>
+        <!-- Imagen y versículos -->
+        <div class="div3">
+            <img src="orando.jpeg" alt="Jesús orando">
+        </div>
+        <div class="div4">
+            <strong><h3>Versículos Bíblicos</h3></strong>
+            <ul>
+                <li>"Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree no se pierda, mas tenga vida eterna." - Juan 3:16</li>
+                <li>"Clama a mí, y yo te responderé, y te enseñaré cosas grandes y ocultas que tú no conoces." - Jeremías 33:3</li>
+                <li>"No temas, porque yo estoy contigo; no desmayes, porque yo soy tu Dios que te esfuerzo; siempre te ayudaré, siempre te sustentaré con la diestra de mi justicia." - Isaías 41:10</li>
+            </ul>
+        </div>
+        <!-- Título del formulario -->
+        <div class="div5">
+            <h1>Petición de Oración</h1>
+        </div>
+    </div>
+
+    <!-- Formulario de petición -->
+    <div class="form-container">
+        <h2>Envíanos tu petición</h2>
+        <p>Estaremos orando por ti.</p>
+        <form action="https://formspree.io/f/xovjwawl" method="POST">
+            <!-- Campo para el nombre -->
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <!-- Campo para el correo electrónico -->
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <!-- Campo para la petición -->
+            <div class="form-group">
+                <label for="prayer">Petición:</label>
+                <textarea id="prayer" name="prayer" placeholder="Escribe tu petición aquí..." rows="5" required></textarea>
+            </div>
+            <!-- Campo para el mensaje (adicional) -->
+            <div class="form-group">
+                <label for="message">Mensaje adicional (opcional):</label>
+                <textarea id="message" name="Message" placeholder="Escribe un mensaje adicional aquí..." rows="3"></textarea>
+            </div>
+            <!-- Botón de enviar -->
+            <button type="submit" class="btn">Enviar Petición</button>
+        </form>
+    </div>
+
+    <!-- Sección de Donaciones -->
+    <div class="donation-section">
+        <h2>Apoya nuestro ministerio</h2>
+        <p>Si deseas apoyar nuestro trabajo, puedes hacer una donación a través de:</p>
+        <div class="donation-buttons">
+            <!-- Botón de PayPal -->
+           
+            <a href="https://paypal.me/jhonf54?country.x=CO&locale.x=es_XC" target="_blank" class="donation-button paypal">
+                <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="Donar con PayPal" class="paypal-logo">
+            </a>
+            <!-- Botón de Nequi -->
+            <a href="https://api.whatsapp.com/send?phone=573185190645&text=Hola,%20quiero%20hacer%20una%20donación%20a%20través%20de%20Nequi." target="_blank" class="donation-button nequi">
+                <img src="nequi.png" alt="Donar con Nequi" class="nequi-logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>© 2025 Orando por ti. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
